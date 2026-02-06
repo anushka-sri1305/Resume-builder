@@ -1,8 +1,8 @@
 import axios from 'axios'
 
 const api = axios.create({
-    baseURL: "https://resume-builder-z6a4.onrender.com";
-})
+    baseURL: "https://resume-builder-z6a4.onrender.com",
+});
 
 api.interceptors.request.use((config) => {
   const token = localStorage.getItem('token')
